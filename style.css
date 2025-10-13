@@ -1,0 +1,194 @@
+/* Import Poppins font (Ini hanya komentar, harus diimplementasikan di HTML) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7ff;
+    color: #1e3a5f;
+    line-height: 1.7; 
+    padding: 30px;
+    background-image: url(background.jpg);
+}
+
+/* Container for layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 74, 128, 0.15);
+}
+
+/* Text center class */
+.text-center {
+    text-align: center;
+}
+
+/* Main title */
+h1 {
+    /* Biru tua untuk judul utama */
+    color: #005691;
+    margin-bottom: 25px;
+    font-weight: 700; /* Tebal */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image styles */
+img {
+    width: 150px;
+    height: 150px; /* Menjaga aspek rasio untuk lingkaran sempurna */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    /* Border biru yang menarik */
+    border: 5px solid #0093e0;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* Sedikit efek zoom saat hover */
+}
+
+/* Section headings */
+h2 {
+    /* Biru sedang */
+    color: #0077b6;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* Garis bawah yang halus */
+    border-bottom: 3px solid #b3e5fc;
+    padding-bottom: 8px;
+    font-weight: 600;
+    /* PERBAIKAN: Rata Tengah */
+    text-align: center; 
+}
+
+/* Blockquote styles */
+blockquote {
+    font-style: italic;
+    margin: 15px 0 25px;
+    padding: 15px;
+    /* Background yang sangat muda */
+    background-color: #f1f8ff;
+    /* Border biru yang mencolok */
+    border-left: 6px solid #0077b6;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #e0f7ff; /* Garis yang lebih lembut */
+}
+
+th {
+    /* Biru yang lebih tua untuk header */
+    background-color: #005691;
+    color: white;
+    font-weight: 600;
+}
+
+/* List styles (Ditinggalkan untuk elemen non-hobi) */
+ul, ol {
+    margin: 10px 0 20px 25px;
+    list-style-type: disc; 
+}
+
+/* Container untuk mengatur tata letak kotak hobi */
+.hobbies-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin: 20px 0;
+    justify-content: center;
+}
+
+/* Gaya untuk setiap kotak hobi */
+.hobby-item {
+    background-color: #0077b6; 
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 8px; 
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    cursor: default; 
+}
+
+/* Efek interaktif saat mouse diarahkan (hover) */
+.hobby-item:hover {
+    background-color: #005691; /* Biru tua saat hover */
+    transform: translateY(-3px) scale(1.05); /* Sedikit terangkat dan membesar */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Audio player styles */
+audio {
+    display: block;
+    margin: 25px auto;
+    width: 100%; 
+    max-width: 600px;
+}
+
+/* Video iframe styles */
+iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%; 
+    max-width: 600px; 
+    height: 350px; 
+    border: 5px solid #0093e0;
+    border-radius: 10px;
+}
+
+/* Link styles */
+a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005691;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 0.95em;
+    color: #6c7a89;
+    padding-top: 20px;
+    border-top: 1px solid #e0f7ff;
+}
+
+/* Embed audio styles */
+.audio-embed {
+    height: 228px;
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+}
