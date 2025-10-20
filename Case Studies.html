@@ -6,6 +6,7 @@
     <title>Portofolio Pribadi</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
    <div class="container">
@@ -62,19 +63,50 @@
         
         <!-- Video Karya -->
         <h2 class="text-center">Video Karya</h2>
-        <iframe width="540" height="360" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        <iframe width="540" height="360" src="https://www.youtube.com/channel/UC3BV1AAR0VwPw8GO5S9chzg" allowfullscreen></iframe>
 
         <!-- Link ke Media Sosial -->
         <h2 class="text-center">Ikuti Saya</h2>
-        <p class="text-center">
-            <a href="https://www.instagram.com/username" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a>
-        </p>
+        <div class="social-links text-center">
+            <a href="https://www.instagram.com/pinasrirahayu_?igsh=NjkwcWtweG8zMjRv" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+    
+            <a href="https://www.linkedin.com/in/username" target="_blank" class="social-btn linkedin">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+        </div>
 
         <!-- Footer -->
         <footer>
             &copy; 2025 Portofolio Pribadi. Semua hak dilindungi.
         </footer>
     </div>
+
+    <script>
+        function showWelcomeMessage() {
+            alert("Selamat datang di portofolio saya!"); 
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = '#e6f7ff'; 
+        }
+
+        function displayProjects() {
+            console.log("Fungsi displayProjects berjalan.");
+        }
+
+        function displayExperience() {
+            console.log("Fungsi displayExperience berjalan.");
+        }
+        
+        window.onload = function() {
+            changeBackgroundColor();
+            showWelcomeMessage(); 
+            displayProjects();
+            displayExperience();
+        };
+    </script>
+
 </body>
 </html>

@@ -1,7 +1,3 @@
-/* Import Poppins font (Ini hanya komentar, harus diimplementasikan di HTML) */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
-
-/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +41,7 @@ h1 {
 /* Profile image styles */
 img {
     width: 150px;
-    height: 150px; /* Menjaga aspek rasio untuk lingkaran sempurna */
+    height: 150px; 
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 25px;
@@ -55,7 +51,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.05); /* Sedikit efek zoom saat hover */
+    transform: scale(1.05); 
 }
 
 /* Section headings */
@@ -99,7 +95,7 @@ table {
 th, td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #e0f7ff; /* Garis yang lebih lembut */
+    border: 1px solid #e0f7ff;
 }
 
 th {
@@ -138,8 +134,8 @@ ul, ol {
 
 /* Efek interaktif saat mouse diarahkan (hover) */
 .hobby-item:hover {
-    background-color: #005691; /* Biru tua saat hover */
-    transform: translateY(-3px) scale(1.05); /* Sedikit terangkat dan membesar */
+    background-color: #005691; 
+    transform: translateY(-3px) scale(1.05); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -191,4 +187,45 @@ footer {
     width: 100%;
     max-width: 600px;
     margin: 25px auto;
+}
+
+/* Pastikan class text-center didefinisikan untuk penempatan horizontal */
+.text-center {
+    text-align: center;
+}
+
+/* Gaya dasar untuk container tautan */
+.social-links {
+    margin: 20px auto; 
+    text-align: center; 
+}
+
+/* Gaya dasar untuk tombol media sosial */
+.social-btn {
+    display: inline-block; 
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px; 
+    text-decoration: none;
+    color: white; 
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+.social-btn:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.social-btn.instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.social-btn.linkedin {
+    background-color: #0077B5;
+}
+
+.social-btn i {
+    margin-right: 8px;
 }
