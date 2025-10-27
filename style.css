@@ -8,10 +8,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #e0f7ff;
-    color: #1e3a5f;
+    color: #005691;
     line-height: 1.7; 
     padding: 30px;
-    background-image: url(background.jpg);
+    background-image: url(0077b6_solid.png);
 }
 
 /* Container for layout */
@@ -57,7 +57,7 @@ img:hover {
 /* Section headings */
 h2 {
     /* Biru sedang */
-    color: #0077b6;
+    color:#005691;
     margin-top: 30px;
     margin-bottom: 15px;
     /* Garis bawah yang halus */
@@ -94,13 +94,13 @@ table {
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border: 1px solid #e0f7ff;
 }
 
 th {
     /* Biru yang lebih tua untuk header */
-    background-color: #005691;
+    background-color: #0077b6;
     color: white;
     font-weight: 600;
 }
@@ -137,25 +137,6 @@ ul, ol {
     background-color: #005691; 
     transform: translateY(-3px) scale(1.05); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
-}
-
-/* Audio player styles */
-audio {
-    display: block;
-    margin: 25px auto;
-    width: 100%; 
-    max-width: 600px;
-}
-
-/* Video iframe styles */
-iframe {
-    display: block;
-    margin: 25px auto;
-    width: 100%; 
-    max-width: 600px; 
-    height: 350px; 
-    border: 5px solid #0093e0;
-    border-radius: 10px;
 }
 
 /* Link styles */
@@ -224,6 +205,10 @@ footer {
 
 .social-btn.linkedin {
     background-color: #0077B5;
+}
+
+.social-btn.email-btn { 
+    background-color: #D44638; 
 }
 
 .social-btn i {
